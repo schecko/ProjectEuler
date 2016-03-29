@@ -15,5 +15,5 @@ int main()
     std::cout << sum << std::endl;
     int x;
     std::cin >> x;
-
+    return 0;
 }
