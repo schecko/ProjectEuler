@@ -2,13 +2,10 @@
 
 #include <iostream>
 
-const unsigned int targetVal = 600851475143;
-//int targetVal = 13195;
-int largestPrimeFactor = 1;
 
-bool isPrime(unsigned int value)
+bool isPrime(uint64_t value)
 {
-    for (unsigned int i = 2; i < value; i++)
+    for (uint64_t i = 2; i < value; i++)
     {
         if (value % i == 0)
             return false;
@@ -18,14 +15,17 @@ bool isPrime(unsigned int value)
 
 int main()
 {
-    for (unsigned int i = 2; i < sqrt(targetVal); i++)
+
+    const uint64_t targetVal = 600851475143;
+    uint64_t largestPrimeFactor = 1;
+
+    for (uint64_t i = 2; i < (uint64_t)sqrt(targetVal); i++)
     {
-        if (targetVal % i == 0)
+        if (targetVal % i == 0 && isPrime(i))
         {
-            if (isPrime(i))
-            {
-                largestPrimeFactor = i;
-            }
+
+            largestPrimeFactor = i;
+
         }
     }
     std::cout << largestPrimeFactor << std::endl;
