@@ -2,20 +2,33 @@
 
 #include <iostream>
 
-//const int targetVal = 600851475143;
-const int targetVal = 13195;
-int LargestPrimeFactor = 1;
-int temp = 1;
+const unsigned int targetVal = 600851475143;
+//int targetVal = 13195;
+int largestPrimeFactor = 1;
+
+bool isPrime(unsigned int value)
+{
+    for (unsigned int i = 2; i < value; i++)
+    {
+        if (value % i == 0)
+            return false;
+    }
+    return true;
+}
+
 int main()
 {
-    for (int i = 1; i < targetVal; i++)
+    for (unsigned int i = 2; i < sqrt(targetVal); i++)
     {
-        if (i % targetVal == 0)
+        if (targetVal % i == 0)
         {
-            LargestPrimeFactor = i;
+            if (isPrime(i))
+            {
+                largestPrimeFactor = i;
+            }
         }
     }
-    std::cout << LargestPrimeFactor << std::endl;
+    std::cout << largestPrimeFactor << std::endl;
     int x;
     std::cin >> x;
     return 0;
