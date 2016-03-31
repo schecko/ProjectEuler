@@ -1,0 +1,10 @@
+﻿  entry.cpp
+d:\scottsdocs\sourcecode\projecteuler\4\code\entry.cpp(20): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::size': non-standard syntax; use '&' to create a pointer to member
+d:\scottsdocs\sourcecode\projecteuler\4\code\entry.cpp(20): error C2296: '/': illegal, left operand has type 'unsigned int (__thiscall std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'
+d:\scottsdocs\sourcecode\projecteuler\4\code\entry.cpp(21): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::size': non-standard syntax; use '&' to create a pointer to member
+d:\scottsdocs\sourcecode\projecteuler\4\code\entry.cpp(21): error C2446: '<': no conversion from 'unsigned int (__thiscall std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const' to 'uint32_t'
+  d:\scottsdocs\sourcecode\projecteuler\4\code\entry.cpp(21): note: There is no context in which this conversion is possible
+d:\scottsdocs\sourcecode\projecteuler\4\code\entry.cpp(21): error C2297: '<': illegal, right operand has type 'unsigned int (__thiscall std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'
+d:\scottsdocs\sourcecode\projecteuler\4\code\entry.cpp(23): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::size': non-standard syntax; use '&' to create a pointer to member
+d:\scottsdocs\sourcecode\projecteuler\4\code\entry.cpp(23): error C2296: '-': illegal, left operand has type 'unsigned int (__thiscall std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'
+d:\scottsdocs\sourcecode\projecteuler\4\code\entry.cpp(23): error C2296: '+': illegal, left operand has type 'unsigned int (__thiscall std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) noexcept const'
